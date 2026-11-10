@@ -144,3 +144,370 @@ nav {
 .botao:hover {
     background-color: #A88961;
 }
+.sobre {
+    width: 100%;
+    min-height: 420px;
+    display: flex;
+    background-color: #F6F3EE;
+}
+.sobre-imagens {
+    width: 50%;
+    padding: 45px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-imagens img {
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+}
+.sobre-conteudo {
+    width: 50%;
+    background-color: #A88961;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 10%;
+}
+.sobre-subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    color: #6B6253;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+.sobre-conteudo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #F6F3EE;
+    margin-bottom: 20px;
+}
+.sobre-conteudo p {
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    line-height: 1.5;
+    color: #F6F3EE;
+    max-width: 350px;
+    margin-bottom: 18px;
+}
+.botao-mais {
+    background-color: #6B6253;
+    color: #F6F3EE;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 35px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.botao-mais:hover {
+    background-color: #3A3426;
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre-imagens {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .sobre-imagens img {
+        height: auto;
+        max-height: 350px;
+    }
+    .sobre-conteudo {
+        width: 100%;
+        padding: 40px 25px;
+    }
+}
+.cardapio {
+    width: 100%;
+    height: 550px;
+    display: flex;
+}
+.lista-pratos {
+    width: 50%;
+    height: 100%;
+    background-color: #C3AA8F;
+    padding: 40px 50px;
+    text-align: right;
+    color: white;
+}
+.lista-pratos h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.prato-texto {
+    margin-bottom: 15px;
+}
+.prato-texto h3 {
+    font-size: 20px;
+}
+.prato-texto p {
+    font-size: 16px;
+}
+.fotos-pratos {
+    width: 50%;
+    height: 100%;
+    background-color: #F6F3EE;
+    padding: 35px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.prato {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.prato img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.prato h3 {
+    color: #A88961;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+#trabalhos {
+    width: 100%;
+    overflow: hidden;
+    scroll-margin-top: 85px;
+}
+.galeria {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    gap: 0;
+}
+.foto {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: flex 0.6s ease;
+}
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+.foto:hover {
+    flex: 3;
+}
+
+.foto:hover img {
+    transform: scale(1.05);
+}
+.legenda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    color: white;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.75)
+    );
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s ease;
+}
+.foto:hover .legenda {
+    opacity: 1;
+    transform: translateY(0);
+}
+.legenda h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.legenda p {
+    font-size: 15px;
+    margin: 0;
+}
+.mapa-turistico {
+    width: 100%;
+    padding: 35px 0;
+    background-color: #F6F3EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mapa-turistico img {
+    width: 85%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.20);
+}
+.localizacao {
+    align-items: center;
+    width: 100%;
+    min-height: 420px;
+    padding: 35px 6%;
+    display: flex;
+    align-items: stretch;
+    background-color: #F6F3EE;
+    box-sizing: border-box;
+}
+.mapa-container {
+    width: 60%;
+    min-height: 350px;
+    overflow: hidden;
+}
+.mapa-container img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    display: block;
+}
+.localizacao-conteudo {
+    width: 25%;
+    background-color: #A88961;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 12px;
+    box-sizing: border-box;
+}
+.informacao {
+    margin-bottom: 12px;
+}
+.informacao h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #F6F3EE;
+    margin-bottom: 2px;
+}
+.informacao p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #F6F3EE;
+    margin: 0;
+}
+.divloc {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+@media (max-width: 768px) {
+    .localizacao {
+        flex-direction: column;
+        padding: 25px 5%;
+    }
+    .mapa-container {
+        width: 100%;
+        height: 300px;
+    }
+    .localizacao-conteudo {
+        width: 100%;
+        padding: 25px 20px;
+        gap: 20px;
+    }
+}
+
+.historia-chef {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #F6F3EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historia-chef img {
+    width: 100%;
+    height: 6;
+    display: block;
+}
+
+.contato {
+    background-color: #F6F3EE;
+    display: flex;
+    align-items: flex-start;
+    gap: 45px;
+    padding: 28px 30px;
+}
+
+.imagem img {
+    width: 428px;
+    height: 349px;
+    object-fit: cover;
+}
+
+.informacoes {
+    flex: 1;
+    position: relative;
+    min-height: 349px;
+}
+
+.informacoes h2 {
+    color: #3d382f;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.informacoes p {
+    color: #49443c;
+    font-size: 15px;
+    margin-bottom: 17px;
+}
+
+.localizacoes {
+    max-width: 390px;
+    line-height: 1.3;
+}
+
+.redes {
+    display: flex;
+    gap: 13px;
+    margin-top: 34px;
+}
+
+.redes a {
+    background-color: #b49365;
+    color: #59432a;
+    text-decoration: none;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.logo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.logo img {
+    width: 240px;
+    height: auto;
+}
+
